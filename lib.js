@@ -14,6 +14,8 @@ var deliveryReport = function(smsid, shortcode, callback){
     // this event fires *one* time, after all the `data` events/chunks have been gathered
     http_res.on("end", function () {
         // you can use res.send instead of console.log to output via express
+        data = data.split('\n')[0];
+
         callback(data);
     });
 });
