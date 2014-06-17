@@ -1,4 +1,4 @@
-var http = require("http");
+var http = require("http");//
 
 //--------------
 // takes: smsid and shortode
