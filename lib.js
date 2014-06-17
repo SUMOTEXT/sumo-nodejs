@@ -1,7 +1,7 @@
 var http = require("http");
 
-
-http.get("http://mosms.sumotext.com/secure/sumoReport.aspx?smsid=7A2D2AF7-6851-4D22-BD41-BD8EE94C061E&shortcode=74700", function (http_res) {
+var deliveryReport = function(smsid, shortcode, callback){
+    http.get("http://mosms.sumotext.com/secure/sumoReport.aspx?smsid=" + smsid + "&shortcode=" + shortcode, function (http_res) {
     // initialize the container for our data
     var data = "";
 
@@ -14,6 +14,9 @@ http.get("http://mosms.sumotext.com/secure/sumoReport.aspx?smsid=7A2D2AF7-6851-4
     // this event fires *one* time, after all the `data` events/chunks have been gathered
     http_res.on("end", function () {
         // you can use res.send instead of console.log to output via express
-        console.log(data);
+        callback(data);
     });
 });
+}
+
+module.exports.deliveryReport = deliveryReport;
