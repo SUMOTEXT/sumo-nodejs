@@ -9,10 +9,16 @@ sumo.deliveryReport({
 }, function(data){
 	console.log(data);
 });
-/*
-sumo.sendMt('5012589948', 'CINGULARUS', '74700', 'CSAPI', 'hey', function(data){
+
+sumo.sendMt({
+	mobile: '5012589948', 
+	carrier: 'CINGULARUS', 
+	shortcode: '74700',
+	keyword: 'CSAPI',
+	msg: 'yolo'
+}, function(data){
 	console.log(data);
-});*/
+});
 
 sumo.carrierCodeLookup({
 	mobile : 	'5014139908', 
