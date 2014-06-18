@@ -11,6 +11,6 @@ sumo.sendMt('5012589948', 'CINGULARUS', '74700', 'CSAPI', 'hey', function(data){
 	console.log(data);
 });*/
 
-sumo.carrierCodeLookup('5014139908', '74700', function(data){
+sumo.carrierCodeLookup({mobile: '5014139908', shortcode:'74700'}, function(data){
 	console.log(data);
 });
