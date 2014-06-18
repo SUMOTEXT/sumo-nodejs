@@ -16,9 +16,8 @@ describe("#carrierCodeLookup", function(){
 
   });
  
-  it("should pass", function(){
+  it("should return carrier code", function(){
     carrier.should.equal('CINGULARUS')
-    //expect(carrier).equals('CINGULARUS');
   });
  
 });
