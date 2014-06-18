@@ -19,7 +19,7 @@ sumo.sendMt({
 	carrier: '_carrier', 
 	shortcode: '_shortcode',
 	key: '_key',
-	msg: 'yolo'
+	msg: 'the message contents'
 }, function(data){
   //do something with 'data' here, which contains response data
 	console.log(data);
