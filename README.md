@@ -1,7 +1,7 @@
 sumo-nodejs
 ===========
 
-This is a helper class for calling the [Sumotext Api](sumotext.github.io) from a nodejs platform.
+This is a helper class for calling the [Sumotext Api](http://sumotext.github.io) from a nodejs platform.
 
 ##Quick Start
 ```
