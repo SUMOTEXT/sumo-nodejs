@@ -7,3 +7,6 @@ sumo.deliveryReport(smsid, shortcode, function(data){
 	console.log(data);
 });
 
+sumo.sendMt('5012589948', 'CINGULARUS', '74700', 'CSAPI', 'hey', function(data){
+	console.log(data);
+});
