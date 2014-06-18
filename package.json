@@ -1,0 +1,19 @@
+{
+  "name": "sumo-nodejs",
+  "version": "0.0.0",
+  "description": "Helper class for calling the Sumotext API from nodeJS.",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SUMOTEXT/sumo-nodejs.git"
+  },
+  "author": "cbsm1th",
+  "license": "BSD-2-Clause",
+  "bugs": {
+    "url": "https://github.com/SUMOTEXT/sumo-nodejs/issues"
+  },
+  "homepage": "https://github.com/SUMOTEXT/sumo-nodejs"
+}
