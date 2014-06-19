@@ -27,7 +27,7 @@ sumo.sendMt({
 		console.log(data);
 	}
 });
-
+*/
 sumo.carrierCodeLookup({
 	mobile : 	'5014139908', 
 	shortcode : '74700'
@@ -47,6 +47,10 @@ sumo.manageGroups({
 	group: 'woop1',
 	action: 'add',
 	mobile: ''
-}, function(data){
-	console.log(data);
-});*/
+}, function(err, data){
+	if (err){
+		console.log(err);
+	} else {
+		console.log(data);
+	}
+});
