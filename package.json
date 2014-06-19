@@ -1,6 +1,6 @@
 {
   "name": "sumo-nodejs",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Helper class for calling the Sumotext API from nodeJS.",
   "main": "./lib/index.js",
   "scripts": {

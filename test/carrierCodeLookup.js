@@ -9,7 +9,7 @@ describe("#carrierCodeLookup", function(){
  	sumo.carrierCodeLookup({
 			mobile: '5012589948',
 			shortcode: '74700',
-		}, function(data){
+		}, function(err, data){
 			carrier = data;
 			done();
 	});
