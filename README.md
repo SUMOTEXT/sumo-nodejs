@@ -20,9 +20,13 @@ sumo.sendMt({
 	shortcode: '_shortcode',
 	key: '_key',
 	msg: 'the message contents'
-}, function(data){
-  //do something with 'data' here, which contains response data
-	console.log(data);
+}, function(err, data){
+	if (err){
+		console.log(err);
+	} else {
+		//do something with 'data' here, which contains response data
+		console.log(data);
+	}
 });
 ```
 The console will print the response
