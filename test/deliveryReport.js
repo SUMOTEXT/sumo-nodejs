@@ -9,7 +9,7 @@ describe("#deliveryReport", function(){
    	sumo.deliveryReport({
       smsid :   '7A2D2AF7-6851-4D22-BD41-BD8EE94C061E', 
       shortcode : '74700'
-    },  function(data){
+    },  function(err, data){
           response = data;
           done();
         });
