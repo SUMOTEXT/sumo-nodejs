@@ -9,17 +9,21 @@ sumo.deliveryReport({
 }, function(data){
 	console.log(data);
 });
-
+*/
 sumo.sendMt({
 	mobile: '5012589948', 
 	carrier: 'CINGULARUS', 
 	shortcode: '74700',
 	keyword: 'CSAPI',
 	msg: 'yoyo'
-}, function(data){
-	console.log(data);
+}, function(err, data){
+	if (err){
+		console.log(err);
+	} else {
+		console.log(data);
+	}
 });
-*/
+/*
 sumo.carrierCodeLookup({
 	mobile : 	'5014139908', 
 	shortcode : '74700'
@@ -41,4 +45,4 @@ sumo.manageGroups({
 	mobile: ''
 }, function(data){
 	console.log(data);
-});
+});*/
