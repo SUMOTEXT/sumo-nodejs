@@ -1,4 +1,4 @@
-sumo = require('../lib');
+sumo = require('sumo-nodejs');
 
 sumo.carrierCodeLookup({
 	mobile : 	'{mobile}', 
