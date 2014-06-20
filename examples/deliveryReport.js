@@ -1,6 +1,5 @@
 sumo = require('sumo-nodejs');
 
-
 sumo.deliveryReport({
 	smsid : 	'{smsid}', 
 	shortcode : '{shortcode}'
